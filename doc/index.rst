@@ -9,7 +9,7 @@ This is the documentation of **apyt**.
     This is the main page of your project's `Sphinx <http://sphinx-doc.org/>`_
     documentation. It is formatted in `reStructuredText
     <http://sphinx-doc.org/rest.html>`__. Add additional pages by creating
-    rst-files in ``docs`` and adding them to the `toctree
+    rst-files in ``doc`` and adding them to the `toctree
     <http://sphinx-doc.org/markup/toctree.html>`_ below. Use then
     `references <http://sphinx-doc.org/markup/inline.html>`__ in order to link
     them from this page, e.g. :ref:`authors <authors>` and :ref:`changes`.
