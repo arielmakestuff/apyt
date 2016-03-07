@@ -111,15 +111,15 @@ class SelectASTNodes:
 
     def __init__(self, node, *, replace=False, selectall=False,
                  selectroot=False, initnode=True):
-        self._node = node
+        self._node = node if isinstance(node, ASTNode) else ASTNode(node)
         self._replace = replace
         self._all = selectall
         self._selectroot = selectroot
         self._initnode = initnode
 
     def __call__(self):
-        root = self._node
-        node = root if isinstance(root, ASTNode) else ASTNode(root)
+        node = self._node
+        root = node.node
         iterwalk = walk(node, replace=self._replace)
 
         # Dot optimizations
